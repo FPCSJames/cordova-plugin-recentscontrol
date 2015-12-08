@@ -8,6 +8,14 @@ cordova-android 4.x and 5.x are fully compatible with this plugin, as they run a
 
 For more information on updating your copy of cordova-cli and/or cordova-android, see [the official docs](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#link-11).
 
+### Installing the plugin
+
+This plugin is not currently available on npm. To install from this repo, run:
+
+```bash
+cordova plugin add https://github.com/smcpjames/cordova-plugin-RecentsColor
+```
+
 ### config.xml
 The plugin supports any string from [android.graphics.Color.parseColor()](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)) and hex color strings.
 
