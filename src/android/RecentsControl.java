@@ -19,7 +19,7 @@ public class RecentsControl extends CordovaPlugin {
             ActivityManager activityManager = (ActivityManager) cordova.getActivity().getSystemService(Context.ACTIVITY_SERVICE);
             for(ActivityManager.AppTask appTask : activityManager.getAppTasks()) {
                 if(appTask.getTaskInfo().id == cordova.getActivity().getTaskId()) {
-                    ActivityManager.TaskDescription description = preferences.getString("RecentsDescription", appTask.getTaskInfo().taskDescription);;
+                    ActivityManager.TaskDescription description = appTask.getTaskInfo().taskDescription;
                     cordova.getActivity().setTaskDescription(new ActivityManager.TaskDescription(preferences.getString("RecentsLabel", description.getLabel()), description.getIcon(), color));
                 }
             }

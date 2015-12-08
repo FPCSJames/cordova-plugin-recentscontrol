@@ -1,4 +1,4 @@
-# cordova-plugin-recentscolor: Recents title bar color for Android 5.0+
+# cordova-plugin-recentscontrol: Settings for Android 5.0+ Recents screen
 
 ## Installation
 ### Prerequisites
@@ -13,19 +13,29 @@ For more information on updating your copy of cordova-cli and/or cordova-android
 This plugin is not currently available on npm. To install from this repo, run:
 
 ```bash
-cordova plugin add https://github.com/smcpjames/cordova-plugin-RecentsColor
+cordova plugin add https://github.com/smcpjames/cordova-plugin-RecentsControl
 ```
 
 ### config.xml
-The plugin supports any string from [android.graphics.Color.parseColor()](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)) and hex color strings.
+This plugin allows you to set the title bar color and task description for your project.
 
-Set your preferred color in your project's config.xml, within the Android platform tag:
+#### Color
+
+The plugin supports any string from [android.graphics.Color.parseColor()](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)) and hex color strings. Set your preferred color in your project's config.xml, within the Android platform tag:
 
 ``` xml
 <preference name="RecentsBackgroundColor" value="#005AAB" />
 ```
 
 *Note: Android currently does not support opacity settings for Recents. Hex strings should be RGB-only.*
+
+#### Description
+
+By default, your task description is the app name. You can change it by setting, within the Android platform tag in config.xml:
+
+``` xml
+<preference name="RecentsDescription" value="Foo Bar Baz" />
+```
 
 ## Credits
 
