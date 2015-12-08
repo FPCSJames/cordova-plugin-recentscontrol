@@ -1,20 +1,27 @@
-# Status Bar Color Cordova Plugin For Android Lollipop
+# cordova-plugin-recentscolor: Recents title bar color for Android 5.0+
 
 ## Installation
 ### Prerequsites
-This must be compiled at Android API level 21 or higher which means you'll have to be using cordova-android v3.7.1 or higher.
-The latest version of cordova-cli does not use cordova-android 3.7.1, so to manually install run the following:
-``` bash
-cordova platform remove android
-cordova platform add android@3.7.1
-```
-### config.xml
-The plugin supports any string from [android.graphics.Color.parseColor()](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)), but to ensure compatibility with [cordova-plugin-statusbar](https://github.com/apache/cordova-plugin-statusbar) make sure to use a hex string in the format #RRGGBB.
+This plugin requires Android API level 21 or higher.
 
-set the preference `StatusBarBackgroundColor` ([also used by cordova-plugin-statusbar](https://github.com/apache/cordova-plugin-statusbar/blob/master/doc/index.md#preferences))
+cordova-android 4.x and 5.x are fully compatible with this plugin, as they run at API level 22 and 23 respectively. If you are using an older version of cordova-android, you must install cordova-android 3.7.1 or higher. 
+
+For more information on updating your copy of cordova-cli and/or cordova-android, see [the official docs](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#link-11).
+
+### config.xml
+The plugin supports any string from [android.graphics.Color.parseColor()](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)) and hex color strings.
+
+Set your preferred color in your project's config.xml, within the Android platform tag:
+
 ``` xml
-<preference name="StatusBarBackgroundColor" value="#BD3138" />
+<preference name="RecentsBackgroundColor" value="#005AAB" />
 ```
+
+*Note: Android currently does not support opacity settings for Recents. Hex strings should be RGB-only.*
+
+## Credits
+
+This plugin was originally created by [internrocket, inc](https://internrocket.com/). See License below.
 
 ## License
 [The MIT License (MIT)](http://www.opensource.org/licenses/mit-license.html)
