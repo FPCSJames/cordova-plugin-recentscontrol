@@ -17,11 +17,11 @@ cordova plugin add https://github.com/smcpjames/cordova-plugin-RecentsControl
 ```
 
 ### config.xml
-This plugin allows you to set the title bar color and task description for your project.
+This plugin allows you to set the Recents title bar color and task description for your project.
 
 #### Color
 
-The plugin supports any string from [android.graphics.Color.parseColor()](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)) and hex color strings. Set your preferred color in your project's config.xml, within the Android platform tag:
+By default, your title bar color will be black. The plugin supports any string from [android.graphics.Color.parseColor()](http://developer.android.com/reference/android/graphics/Color.html#parseColor(java.lang.String)) and hex color strings. Set your preferred color in your project's config.xml, within the Android platform tag:
 
 ``` xml
 <preference name="RecentsBackgroundColor" value="#005AAB" />
