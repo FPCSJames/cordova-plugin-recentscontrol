@@ -4,6 +4,7 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
+import android.util.Log;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaArgs;
