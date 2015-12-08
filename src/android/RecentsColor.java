@@ -1,4 +1,4 @@
-package com.stokesmcnutt.cordova.recentscolor;
+package com.stokesmcnutt.cordova.recentscontrol;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -9,18 +9,19 @@ import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
 
-public class RecentsColor extends CordovaPlugin {
+public class RecentsControl extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             int color = Color.parseColor(preferences.getString("RecentsBackgroundColor", "#000000"));
+			String desc = 
             ActivityManager activityManager = (ActivityManager) cordova.getActivity().getSystemService(Context.ACTIVITY_SERVICE);
             for(ActivityManager.AppTask appTask : activityManager.getAppTasks()) {
                 if(appTask.getTaskInfo().id == cordova.getActivity().getTaskId()) {
-                    ActivityManager.TaskDescription description = appTask.getTaskInfo().taskDescription;
-                    cordova.getActivity().setTaskDescription(new ActivityManager.TaskDescription(description.getLabel(), description.getIcon(), color));
+                    ActivityManager.TaskDescription description = preferences.getString("RecentsDescription", appTask.getTaskInfo().taskDescription);;
+                    cordova.getActivity().setTaskDescription(new ActivityManager.TaskDescription(preferences.getString("RecentsLabel", description.getLabel()), description.getIcon(), color));
                 }
             }
         }
