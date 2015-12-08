@@ -1,4 +1,4 @@
-package com.internrocket.plugins.statusbarcolor;
+package com.stokesmcnutt.cordova.recentscolor;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -9,7 +9,7 @@ import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
 
-public class StatusBarColor extends CordovaPlugin {
+public class RecentsColor extends CordovaPlugin {
 
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
