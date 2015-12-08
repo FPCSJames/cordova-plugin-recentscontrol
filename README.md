@@ -10,7 +10,13 @@ For more information on updating your copy of cordova-cli and/or cordova-android
 
 ### Installing the plugin
 
-This plugin is not currently available on npm. To install from this repo, run:
+This plugin is available on npm. To install the latest stable, simply run:
+
+```bash
+cordova plugin add cordova-plugin-recentscontrol
+```
+
+To install the most recent version from this repo (may be unstable!), instead run:
 
 ```bash
 cordova plugin add https://github.com/smcpjames/cordova-plugin-recentscontrol
