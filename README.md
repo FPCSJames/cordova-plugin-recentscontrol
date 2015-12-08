@@ -13,7 +13,7 @@ For more information on updating your copy of cordova-cli and/or cordova-android
 This plugin is not currently available on npm. To install from this repo, run:
 
 ```bash
-cordova plugin add https://github.com/smcpjames/cordova-plugin-RecentsControl
+cordova plugin add https://github.com/smcpjames/cordova-plugin-recentscontrol
 ```
 
 ## Configuration
@@ -43,7 +43,7 @@ Arguments are required. setOptions should only be called with non-empty values f
 
 ## Credits
 
-This plugin was originally created by [internrocket, inc](https://internrocket.com/). See License below.
+This plugin was originally created by [internrocket, inc](https://internrocket.com/). See License below. This fork was created in order to offer standalone control of Recents without touching the status bar, removing possible "duplication of effort" when also using the official StatusBar plugin.
 
 ## License
 [The MIT License (MIT)](http://www.opensource.org/licenses/mit-license.html)
