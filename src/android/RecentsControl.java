@@ -33,7 +33,7 @@ public class RecentsControl extends CordovaPlugin {
 	}
 	
 	@Override
-	public boolean execute(String action, CordovaArgs args, CallbackContext callbackContext) throws JSONException {
+	public boolean execute(final String action, final CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
 		if ("setColor".equals(action)) {
 			cordova.getActivity().runOnUiThread(new Runnable() {
 				@Override
@@ -95,7 +95,6 @@ public class RecentsControl extends CordovaPlugin {
 			if (desc != null && !desc.isEmpty()) {
 				ActivityManager activityManager = (ActivityManager) cordova.getActivity().getSystemService(Context.ACTIVITY_SERVICE);
 				try {
-					int color = Color.parseColor(colorStr);
 					for(ActivityManager.AppTask appTask : activityManager.getAppTasks()) {
 						if(appTask.getTaskInfo().id == cordova.getActivity().getTaskId()) {
 							ActivityManager.TaskDescription description = appTask.getTaskInfo().taskDescription;
