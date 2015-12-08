@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.stokesmcnutt.cordova.recentscontrol" version="1.1.0">
-    <name>RecentsColor</name>
+    <name>RecentsControl</name>
     <description>Set the Recents title bar color and label in Android 5.0+</description>
     <license>MIT</license>
     <keywords>android,recents,color,label,description</keywords>
