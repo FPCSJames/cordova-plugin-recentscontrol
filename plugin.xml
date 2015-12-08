@@ -15,6 +15,6 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <source-file src="src/android/StatusBarColor.java" target-dir="src/com/stokesmcnutt/cordova/recentscolor"/>
+        <source-file src="src/android/RecentsColor.java" target-dir="src/com/stokesmcnutt/cordova/recentscolor"/>
     </platform>
 </plugin>
