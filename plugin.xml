@@ -13,7 +13,7 @@
 	</js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="androidrecentscontrol">
+            <feature name="RecentsControl">
                 <param name="android-package" value="com.stokesmcnutt.cordova.recentscontrol.RecentsControl" />
                 <param name="onload" value="true" />
             </feature>
