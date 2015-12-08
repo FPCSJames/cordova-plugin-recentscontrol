@@ -1,7 +1,7 @@
 # cordova-plugin-recentscolor: Recents title bar color for Android 5.0+
 
 ## Installation
-### Prerequsites
+### Prerequisites
 This plugin requires Android API level 21 or higher.
 
 cordova-android 4.x and 5.x are fully compatible with this plugin, as they run at API level 22 and 23 respectively. If you are using an older version of cordova-android, you must install cordova-android 3.7.1 or higher. 
