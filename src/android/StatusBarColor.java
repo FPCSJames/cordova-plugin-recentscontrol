@@ -4,9 +4,6 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Build;
-import android.view.Window;
-import android.view.View;
-import android.view.WindowManager;
 
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
@@ -26,10 +23,6 @@ public class StatusBarColor extends CordovaPlugin {
                     cordova.getActivity().setTaskDescription(new ActivityManager.TaskDescription(description.getLabel(), description.getIcon(), color));
                 }
             }
-            Window window = cordova.getActivity().getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(color);
         }
     }
 }
