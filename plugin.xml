@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="com.stokesmcnutt.cordova.recentscontrol" version="1.0">
+        id="com.stokesmcnutt.cordova.recentscontrol" version="1.1.0">
     <name>RecentsColor</name>
     <description>Set the Recents title bar color and label in Android 5.0+</description>
     <license>MIT</license>
@@ -8,13 +8,16 @@
     <engines>
         <engine name="cordova" version=">=3.7.1"/>
     </engines>
+	<js-module src="www/recentscontrol.js" name="recentscontrol">
+		<clobbers target="window.RecentsControl" />
+	</js-module>
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="androidrecentscontrol">
-                <param name="android-package" value="com.stokesmcnutt.cordova.recentscontrol.RecentsControl"/>
+                <param name="android-package" value="com.stokesmcnutt.cordova.recentscontrol.RecentsControl" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <source-file src="src/android/RecentsControl.java" target-dir="src/com/stokesmcnutt/cordova/recentscontrol"/>
+        <source-file src="src/android/RecentsControl.java" target-dir="src/com/stokesmcnutt/cordova/recentscontrol" />
     </platform>
 </plugin>
