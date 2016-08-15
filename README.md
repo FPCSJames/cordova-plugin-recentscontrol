@@ -19,7 +19,7 @@ cordova plugin add cordova-plugin-recentscontrol
 To install the most recent version from this repo (may be unstable!), instead run:
 
 ```bash
-cordova plugin add https://github.com/smcpjames/cordova-plugin-recentscontrol
+cordova plugin add https://github.com/fpcsjames/cordova-plugin-recentscontrol
 ```
 
 ## Configuration

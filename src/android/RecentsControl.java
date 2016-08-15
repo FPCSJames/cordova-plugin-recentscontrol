@@ -1,4 +1,4 @@
-package com.stokesmcnutt.cordova.recentscontrol;
+package net.flashpointcs.cordova.recentscontrol;
 
 import android.app.ActivityManager;
 import android.content.Context;
