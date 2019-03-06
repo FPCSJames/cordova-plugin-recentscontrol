@@ -4,7 +4,7 @@
 ### Prerequisites
 This plugin requires Android API level 21 or higher.
 
-cordova-android 4.x and 5.x are fully compatible with this plugin, as they run at API level 22 and 23 respectively. If you are using an older version of cordova-android, ensure it is version 3.7.1 or higher.
+cordova-android 4.x and 5.x+ are fully compatible with this plugin, as they run at API level 22 and 23 respectively. If you are using an older version of cordova-android, ensure it is version 3.7.1 or higher.
 
 For more information on updating your copy of cordova-cli and/or cordova-android, see [the official docs](https://cordova.apache.org/docs/en/latest/guide/cli/index.html#link-11).
 
@@ -49,7 +49,7 @@ Arguments are required. setOptions should only be called with non-empty values f
 
 ## Credits
 
-This plugin was originally created by [internrocket, inc](https://internrocket.com/). See License below. This fork was created in order to offer standalone control of Recents without touching the status bar, removing possible "duplication of effort" when also using the official StatusBar plugin.
+This plugin was originally created by [internrocket, inc](https://internrocket.com/). See License below. This fork was created in order to offer standalone control of Recents without touching the status bar, removing possible conflicts when also using the official StatusBar plugin.
 
 ## License
 [The MIT License (MIT)](http://www.opensource.org/licenses/mit-license.html)
