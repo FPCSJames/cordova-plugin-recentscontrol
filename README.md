@@ -54,7 +54,7 @@ This plugin was originally created by [internrocket, inc](https://internrocket.c
 ## License
 [The MIT License (MIT)](http://www.opensource.org/licenses/mit-license.html)
 
-Copyright (c) 2015-2019 Flashpoint Computer Services, LLC
+Copyright (c) 2015-2019 Flashpoint Computer Services, LLC  
 Copyright (c) 2015 internrocket, inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
